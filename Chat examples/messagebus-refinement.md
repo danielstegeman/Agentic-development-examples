@@ -1,7 +1,28 @@
-User: [Link to work item #12345]
-I want to refine the PBI for the installation of the Contoso Message Broker service in the deployment pipeline. 
+# Refinement of Contoso Message Broker Installation PBI
+## About this example
 
-GitHub Copilot: I'll help you refine the PBI for Contoso Message Broker installation. Let me first retrieve the current PBI content and gather relevant context.
+This example demonstrates the use of the refinement agent in this repository to refine a Product Backlog Item (PBI) for installing the Contoso Message Broker service in a deployment pipeline. It has been modified to remove any possibly sensitive information. 
+
+## Why did this work so well?
+This backlog item only required a title and a few basic pointers initially. Only some minor edits were made after the full refinement was generated.
+This example worked incredibly well due to several key factors:
+* The refinement agent used is well defined, providing a lot of context on how to approach the task of PBI refinement.
+* A reference to a High level design document was provided, giving Copilot the necessary background to understand the component being installed.
+* It used the azure devops MCP server to retrieve any existing PBI content, ensuring that the refinement was based on the latest information, although it was mostly a blank template in this case.
+* It contains a very explicit approval step before updating the PBI in Azure DevOps, ensuring that no unwanted changes are made.
+
+---
+
+### User:
+
+[Link to work item #12345]
+I want to refine the PBI for the installation of the Contoso Message Broker service in the deployment pipeline.
+
+---
+
+### GitHub Copilot:
+
+I'll help you refine the PBI for Contoso Message Broker installation. Let me first retrieve the current PBI content and gather relevant context.
 
 [Retrieved work item from Azure DevOps and searched codebase for relevant documentation and installation patterns]
 
@@ -46,9 +67,17 @@ Transform the blank Contoso Message Broker installation PBI into a complete work
 
 Would you like me to proceed with creating the complete refined PBI content, or would you like to provide guidance on any of the considerations above first?
 
-User: refine the PBI
+---
 
-GitHub Copilot: I'll now present the complete refined PBI for your review.
+### User
+
+refine the PBI
+
+---
+
+### GitHub Copilot
+
+I'll now present the complete refined PBI for your review.
 
 ---
 
@@ -166,9 +195,17 @@ N/A
 2. Update Azure DevOps with this refined version (requires your explicit approval)?
 3. Adjust the scope or level of detail in any section?
 
-User: looks good update the PBI
+---
 
-GitHub Copilot: I'll update the PBI in Azure DevOps now.
+### User
+
+looks good update the PBI
+
+---
+
+### GitHub Copilot
+
+I'll update the PBI in Azure DevOps now.
 
 Ran `wit_update_work_item`
 
